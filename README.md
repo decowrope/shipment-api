@@ -4,7 +4,7 @@ Pokrenite aplikaciju u razvojnom okruženju koristeći "npm run dev".
 
 ## Sučelje
 
-Sučelje omogućuje korisniku da odabere različite opcije izbornika: pregled svih pošiljki, stvaranje nove pošiljke ili ažuriranje postojeće pošiljke.
+Sučelje omogućuje korisniku odabir različitih opcije izbornika: pregled svih pošiljki, stvaranje nove pošiljke ili ažuriranje postojeće pošiljke.
 
 Sučelje koristi USeContext hook za dijeljenje stanja između komponenata te prikazivanje komponenata u ovisnosti o currentViewu. 
 
