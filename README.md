@@ -1,8 +1,23 @@
-# React + Vite
+## Korištenje
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pokrenite aplikaciju u razvojnom okruženju koristeći "npm run dev".
 
-Currently, two official plugins are available:
+## Sučelje
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sučelje omogućuje korisniku da odabere različite opcije izbornika: pregled svih pošiljki, stvaranje nove pošiljke ili ažuriranje postojeće pošiljke.
+
+Sučelje koristi USeContext hook za dijeljenje stanja između komponenata te prikazivanje komponenata u ovisnosti o currentViewu. 
+
+Sučelje koristi UseState hook za dijeljenje pošiljki između komponenti.
+
+## Komponente
+
+CreateShipment.jsx šalje HTTP POST zahtjev na "https://jsonplaceholder.typicode.com/posts" kako bi simulirao stvaranje nove pošiljke na  backendu. Nakon uspješnog stvaranja, ažurira stanje pošiljki i vraća prikaz na početni api.
+
+UpdateShipment.jsx šalje HTTP PATCH zahtjev na "https://jsonplaceholder.typicode.com/posts/{orderId}" kako bi simulirao ažuriranje postojeće pošiljke na backendu. Nakon uspješnog ažuriranja, ažurira stanje pošiljki i vraća prikaz na početni api.
+
+Shipments.jsx je dizajniran da prikaže sve stvorene pošiljke. Nije ostvaren GET zahtjev niti lokalno spremanje podataka. Prikazuje trenutno stanje pošiljki koje je dijeljeno putem useContext hook. Dodatno, omogućuje filtriranje po tri različite značajke: Customer ID, Shipment Status i Order ID.
+
+## Autor
+
+Petar Majić
