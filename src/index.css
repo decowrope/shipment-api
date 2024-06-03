@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.logo-div {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.logo-img {
+  width: 5vw; 
+}
+
+.pick-option {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 1.5rem; 
+  border: 3px solid black;
+  border-radius: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #e30074;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.options-list li {
+ 
+  margin: 1rem 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  border: 2px solid white; 
+  border-radius: 2rem;
+  padding: 1rem; 
+  width: 30vw; 
+  transition: background-color 0.5s ease;
+  background-color: lightgray;
+}
+
+.options-list li:hover{
+  background-color: #e44c9c;
+  color: white;
+  cursor: pointer;
+}
+
+/*  CREATE */
+
+.form-div {
+  width: 30vw;
+  margin: 2rem auto;
+  padding: 3rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-div h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-create {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-create label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.form-create input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-create input[type="date"] {
+  padding: 8px;
+}
+
+.form-create button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-create button:hover {
+  background-color: #45a049;
+}
+
+
+/* ALL */
+
+.shipments-div {
+  width: 30vw;
+  margin: 2rem auto;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.shipments-div h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-form label {
+  font-weight: bold;
+}
+
+.filter-form select,
+.filter-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.filter-form button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-form button:hover {
+  background-color: #45a049;
+}
+
+.shipments-list {
+  list-style: none;
+  padding: 0;
+}
+
+.shipment-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}
+
+
+/* UPDATE */
+
+.update-form-div {
+  width: 30vw;
+  margin: 2rem auto;
+  padding: 3rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.update-form-div h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-section label {
+  font-weight: bold;
+}
+
+.search-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-section button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-section button:hover {
+  background-color: #45a049;
+}
+
+.form-update {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-update label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.form-update input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-update input[type="date"] {
+  padding: 8px;
+}
+
+.form-update button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-update button:hover {
+  background-color: #45a049;
+}
